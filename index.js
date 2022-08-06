@@ -1,28 +1,25 @@
-/*
-function introduction(name1) {
-  console.log(`My name is ${name1}`);
+function introduction(name) {
+  return `Hi, my name is ${name}.`;
 }
 
-introduction("Daniel");
-*/
+introduction("Aki");
+introduction("Samip");
 
-/*
-function logTwoValues(value1, value2) {
-  console.log(`The two values are ${value1} and ${value2}.`);
+function introductionWithLanguage(name, language) {
+  return `Hi, my name is ${name} and I am learning to program in ${language}.`;
 }
 
-logTwoValues(30, 50);
-*/
+introductionWithLanguage("Aki", "Ember.js");
+introductionWithLanguage("Samip", "React");
 
-/*
-function sayHelloTo(firstName = "User") {
-  console.log(`Hello, ${firstName}!`);
-}
-sayHelloTo("Daniel");
-*/
-
-function introductionWithLanguageOptional(name, language = "Javascript") {
-  console.log(`Hi, my name is ${name} and I am learning ${language}`);
+function introductionWithLanguageOptional(name, language = "JavaScript") {
+  return `Hi, my name is ${name} and I am learning to program in ${language}.`;
 }
 
-introductionWithLanguageOptional("Daniel");
+introductionWithLanguageOptional("Gracie");
+
+function introductionWithLanguageOptional(name, language = "JavaScript") {
+  return `Hi, my name is ${name} and I am learning to program in ${language}.`;
+}
+
+introductionWithLanguageOptional("Gracie", "Python");
